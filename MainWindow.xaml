@@ -1,0 +1,58 @@
+﻿<Window x:Class="Kassa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kassa"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <ListBox Name="Ostukorv" Margin="0,30,403,0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding}"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ListBox Name="Ostukorv2" Margin="104,30,315,0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding}"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ListBox Name="Ostukorv3" Margin="189,30,251,0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding}"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Label Content="Toode" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label Content="Toote nimi:" HorizontalAlignment="Left" Margin="266,4,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.456,-0.028"/>
+        <Label Content="Toote hind:" HorizontalAlignment="Left" Margin="266,58,0,0" VerticalAlignment="Top"/>
+        <Button Content="Lisa toode" HorizontalAlignment="Left" Margin="417,81,0,0" VerticalAlignment="Top" Width="75" Height="23" RenderTransformOrigin="0.413,0.505" Click="Button_Click_1"/>
+        <Label Content="Kogus:" HorizontalAlignment="Left" Margin="417,4,0,0" VerticalAlignment="Top"/>
+        <Button Content="MAKSA" HorizontalAlignment="Left" Margin="417,277,0,0" VerticalAlignment="Top" Width="90" Height="32" Click="Button_Click"/>
+        <Label Content="Hind" HorizontalAlignment="Left" Margin="104,4,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.187,0.618"/>
+        <Label Content="Kogus" HorizontalAlignment="Left" Margin="194,4,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="107" Margin="266,30,0,0" Name="textbox1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="266,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="69" Name="textbox2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="417,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="45" Name="textbox3"/>
+    </Grid>
+</Window>
